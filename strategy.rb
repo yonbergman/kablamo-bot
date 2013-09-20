@@ -5,7 +5,7 @@ module Aggressive
     return first_possible_move 'eswn' if y == @battle.board.height - 1
     return first_possible_move 'swne' if x == @battle.board.width - 1
     return first_possible_move 'wnes' if y == 0
-    first_possible_move 'wsen'
+    first_possible_move 'eswn'
   end
 
   def fire_at!(enemy, compensate = 0)
